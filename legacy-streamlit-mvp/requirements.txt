@@ -1,0 +1,13 @@
+streamlit
+streamlit-option-menu
+pandas
+PyPDF2
+langchain-text-splitters
+langchain-community
+scikit-learn
+fastembed
+groq
+google-genai
+yfinance
+requests
+Pillow

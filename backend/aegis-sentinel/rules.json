@@ -1,0 +1,24 @@
+{
+  "firewall_version": "1.0.0",
+  "max_input_tokens_soft_limit": 2048,
+  "blocked_instruction_patterns": [
+    "(?i)ignore\\s+all\\s+(previous|prior)\\s+instructions",
+    "(?i)system\\s*prompt\\s*(override|leak|reveal|show)",
+    "(?i)you\\s+are\\s+now\\s+in\\s+developer\\s+mode",
+    "(?i)pretend\\s+to\\s+be\\s+dan",
+    "(?i)bypass\\s+(rls|tenant|org_id|security)",
+    "(?i)drop\\s+table",
+    "(?i)delete\\s+from\\s+tenants",
+    "(?i)truncate\\s+table"
+  ],
+  "financial_tamper_patterns": [
+    "(?i)(set|make)\\s+(total|balance|due)\\s*(to|=|:)\\s*0",
+    "(?i)forgive\\s+all\\s+debts",
+    "(?i)mark\\s+(invoice|due)\\s+as\\s+paid\\s+without\\s+(payment|trx)"
+  ],
+  "rate_limit_per_tenant_minute": 60,
+  "circuit_breaker": {
+    "failure_threshold": 5,
+    "cooldown_seconds": 60
+  }
+}

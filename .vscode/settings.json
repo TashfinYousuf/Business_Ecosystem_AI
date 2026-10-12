@@ -1,0 +1,16 @@
+{
+    "python-envs.defaultEnvManager": "ms-python.python:venv",
+
+    "python.analysis.extraPaths": [
+        "${workspaceFolder}/backend",
+        "${workspaceFolder}/backend/core-api",
+        "${workspaceFolder}/backend/ai-engine",
+        "${workspaceFolder}/backend/agent-runtime",
+        "${workspaceFolder}/backend/aegis-sentinel",
+        "${workspaceFolder}/backend/workers"
+    ],
+    "python.autoComplete.extraPaths": [
+        "${workspaceFolder}/backend",
+        "${workspaceFolder}/backend/core-api"
+    ]
+}

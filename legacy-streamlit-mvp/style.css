@@ -1,0 +1,174 @@
+/* =========================================================
+   TRADE WOLF: PREMIUM DARK TERMINAL CSS 
+   ========================================================= */
+
+/* 1. Import Modern Font (Outfit) */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
+
+/* Apply font to everything */
+html, body, [class*="css"] {
+    font-family: 'Outfit', sans-serif !important;
+}
+
+
+/* 3. Global App Background (Deep Cyber Dark) */
+.stApp {
+    background-color: #0F0F16;
+    color: #FFFFFF;
+}
+
+/* 4. Sleek Sidebar */
+[data-testid="stSidebar"] {
+    background-color: #161622 !important;
+    border-right: 1px solid #2A2A35;
+}
+
+/* 5. Glassmorphism Metrics (The Magic Touch) */
+[data-testid="stMetric"] {
+    background: rgba(30, 30, 46, 0.5);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Metric Hover Glow Effect */
+[data-testid="stMetric"]:hover {
+    transform: translateY(-5px);
+    border: 1px solid #00E676;
+    box-shadow: 0 0 20px rgba(0, 230, 118, 0.15);
+}
+
+/* Metric value and label colors */
+[data-testid="stMetricValue"] {
+    font-size: 1.8rem !important;
+    font-weight: 700 !important;
+    color: #FFFFFF;
+}
+[data-testid="stMetricLabel"] {
+    font-size: 1rem !important;
+    color: #A0A0B0;
+    font-weight: 500;
+}
+
+/* 6. Premium Input Fields & Dropdowns */
+.stTextInput input, .stSelectbox > div > div, .stNumberInput > div > div {
+    background-color: #1E1E2E !important;
+    border: 1px solid #3E3E4A !important;
+    color: #FFFFFF !important;
+    border-radius: 10px !important;
+    transition: all 0.3s ease;
+}
+
+/* Focus glow for inputs */
+.stTextInput input:focus, .stSelectbox > div > div:focus, .stNumberInput > div > div:focus {
+    border-color: #00E676 !important;
+    box-shadow: 0 0 0 2px rgba(0, 230, 118, 0.2) !important;
+}
+
+/* 7. Cyber Buttons */
+.stButton > button {
+    background: linear-gradient(135deg, #00E676 0%, #00B259 100%) !important;
+    color: #0A0A0A !important;
+    font-weight: 700 !important;
+    font-size: 16px !important;
+    border-radius: 10px !important;
+    border: none !important;
+    padding: 0.5rem 1rem !important;
+    transition: all 0.3s ease !important;
+    box-shadow: 0 4px 15px rgba(0, 230, 118, 0.2) !important;
+}
+
+.stButton > button:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 20px rgba(0, 230, 118, 0.4) !important;
+}
+
+/* Secondary Button style (like log out) */
+button[kind="secondary"] {
+    background: transparent !important;
+    border: 1px solid #3E3E4A !important;
+    color: #FFFFFF !important;
+    box-shadow: none !important;
+}
+button[kind="secondary"]:hover {
+    border-color: #FF5252 !important;
+    color: #FF5252 !important;
+}
+
+/* 8. AI Insight Cards (Alerts & Warnings) */
+.stAlert {
+    border-radius: 12px !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    backdrop-filter: blur(10px) !important;
+    font-weight: 500 !important;
+}
+
+/* Success Card - Green */
+.st-b7 { background-color: rgba(0, 230, 118, 0.1) !important; border-color: rgba(0, 230, 118, 0.3) !important; }
+/* Error Card - Red */
+.st-ae { background-color: rgba(255, 82, 82, 0.1) !important; border-color: rgba(255, 82, 82, 0.3) !important; }
+/* Warning Card - Yellow */
+.st-bq { background-color: rgba(255, 193, 7, 0.1) !important; border-color: rgba(255, 193, 7, 0.3) !important; }
+
+/* 9. Dataframes (Tables) Premium Look */
+[data-testid="stDataFrame"] {
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid #3E3E4A;
+}
+th {
+    background-color: #161622 !important;
+    color: #A0A0B0 !important;
+    font-size: 14px !important;
+    font-weight: 600 !important;
+}
+td {
+    color: #E2E8F0 !important;
+}
+
+/* 10. Profile UI & Transitions (From App.py) */
+.profile-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-top: 10px;
+}
+.profile-pic {
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    border: 2px solid #00E676;
+    box-shadow: 0 0 15px rgba(0, 230, 118, 0.3);
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+.profile-pic:hover {
+    transform: scale(1.1);
+}
+
+.center-popup {
+    text-align: center;
+    margin-top: 15vh;
+    background: rgba(30, 30, 46, 0.8);
+    padding: 50px;
+    border-radius: 24px;
+    border: 1px solid rgba(0, 230, 118, 0.3);
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    animation: fadeIn 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Remove default padding from top */
+.block-container {
+    padding-top: 2rem !important;
+}

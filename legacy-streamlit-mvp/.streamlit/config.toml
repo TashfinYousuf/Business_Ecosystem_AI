@@ -1,0 +1,22 @@
+[theme]
+# Binance / TradingView Dark Mode Base
+base="dark"
+
+# 🟢 ট্রেড উলফ এর সিগনেচার নিওন গ্রিন (লাল বর্ডারকে সবুজ করে দিবে)
+primaryColor="#00E5FF"
+
+# ⬛ মেইন ব্যাকগ্রাউন্ড (Deep Matte Dark)
+backgroundColor="#080A0E"
+
+# ⬛ সাইডবার এবং কার্ডের ব্যাকগ্রাউন্ড (Slightly lighter dark)
+secondaryBackgroundColor="#12161C"
+
+# ⬜ টেক্সট কালার
+textColor="#E0E6ED"
+
+# 🔤 মডার্ন ফন্ট
+font="Inter"
+
+[client]
+# "Press Enter to submit" এবং অন্যান্য হাবিজাবি ডিফল্ট UI সরানোর জন্য
+toolbarMode="viewer"
